@@ -10,3 +10,18 @@ We present a method of fuzzy matching in order to create a bridge between the tw
 
 The code to replicate the methodology is available in this repository.
 
+
+~~~
+# Load required packages 
+library(RCurl)
+
+# Create an object for the URL where your data is stored.
+url <- "https://myFile.csv"
+
+# Use getURL from RCurl to download the file.
+myData <- getURL(url)
+
+# Finally let R know that the file is in .csv format so that it can create a data frame.
+myData <- read.csv(textConnection(myData))  
+  
+~~~
