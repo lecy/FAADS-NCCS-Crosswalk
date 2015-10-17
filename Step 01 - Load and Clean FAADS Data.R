@@ -5,7 +5,23 @@
 ##### 
 #####  FAADS Data has been downloaded from http://www.usaspending.gov/data
 #####
-#####  For help see: http://www.usaspending.gov/learn?tab=FAQ#9
+#####  For help see: https://www.usaspending.gov/references/Pages/FAQs.aspx
+#####   
+
+#####  Data Dictionary:
+#####
+#####  https://www.usaspending.gov/DownloadCenter/Documents/USAspending.govDownloadsDataDictionary.pdf
+#####
+
+#####  FAADS 2012 Download page:
+#####
+#####  https://www.usaspending.gov/DownloadCenter/Pages/dataarchives.aspx
+#####
+#####  Agency:  ALL
+#####  Fiscal Year:  2012
+#####  Select the Spending Type:  GRANTS
+#####
+#####  Link:   2012_All_Grants_Full_20151015.csv.zip
 #####
 
 
