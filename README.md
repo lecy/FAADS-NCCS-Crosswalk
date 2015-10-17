@@ -10,18 +10,21 @@ We present a method of fuzzy matching in order to create a bridge between the tw
 
 The code to replicate the methodology is available in this repository.
 
+# Load Sample Data
 
 ~~~
 # Load required packages 
-library(RCurl)
+library( RCurl )
 
 # Create an object for the URL where your data is stored.
-url <- "https://myFile.csv"
+url.faads <- "https://raw.githubusercontent.com/lecy/FAADS-NCCS-Crosswalk/master/FAADS%202012%20Sample.csv"
 
 # Use getURL from RCurl to download the file.
-myData <- getURL(url)
+faads.sample <- getURL( url.faads, ssl.verifypeer = FALSE )
 
 # Finally let R know that the file is in .csv format so that it can create a data frame.
-myData <- read.csv(textConnection(myData))  
-  
+faads.sample <- read.csv (textConnection( faads.sample ))  
+
+
+
 ~~~
