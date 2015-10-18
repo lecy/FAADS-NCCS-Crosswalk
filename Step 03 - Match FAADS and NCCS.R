@@ -220,7 +220,7 @@ for( i in 1:length(faads.names) )
 
 	    temp.dat <- as.data.frame( temp.dat )
 
-	    temp.dat <- data.frame( lapply(temp.dat, as.character), stringsAsFactors=FALSE
+	    temp.dat <- data.frame( lapply(temp.dat, as.character), stringsAsFactors=FALSE )
 
 	    match.dist <- t( adist( faads5[ start.point -1 +i , "recipient_name" ], nccs[ these , "NAME" ] ) )
 
@@ -271,11 +271,11 @@ for( i in 1:length(faads.names) )
 
 # Write match dataset to the Results folder in your directory
 
-write.csv( yes.match, paste("./Results/","Matches",start.point,"to",end.point,".csv",sep="") )
+write.csv( yes.match, "Matches.csv" )
 
-write.csv( maybe.match, paste("./Results/","WeakMatches",start.point,"to",end.point,".csv",sep="") )
+write.csv( maybe.match, "WeakMatches.csv" )
 
-write.csv( no.match, paste("./Results/","NoMatches",start.point,"to",end.point,".csv",sep="") )
+write.csv( no.match, "NoMatches.csv" )
 
 
 
