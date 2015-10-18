@@ -8,7 +8,15 @@ We present a method of fuzzy matching in order to create a bridge between the tw
 
 *Lecy, Jesse D. and Thornton, Jeremy P., What Big Data Can Tell Us About Government Awards to the Nonprofit Sector: Using the FAADS (November 25, 2013).* [Available at SSRN](http://ssrn.com/abstract=2359490 or http://dx.doi.org/10.2139/ssrn.2359490)
 
-The code to replicate the methodology is available in this repository.
+The FAADS data can be optained through the usaspending.gov website:
+
+https://www.usaspending.gov/DownloadCenter/Pages/dataarchives.aspx
+
+NCCS data is available through the Urban Institute (but unfortunately is not free):
+
+http://nccs.urban.org/database/overview.cfm
+
+The code to replicate the methodology described in the paper cited above is available in this repository.
 
 
 
