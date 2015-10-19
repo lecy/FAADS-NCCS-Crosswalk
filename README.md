@@ -72,14 +72,14 @@ Steps for calculating the match rates and comparing characteristics of matched a
 
 This section demonstrates the matching algorithm using two small datasets:
 
-[FAADS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/FAADS%20Demo%20Data.csv): 22 organizations  
-[NCCS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/NCCS%20Demo%20Data.csv): 35 organizations  
+[FAADS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Data/FAADS%20Demo%20Data.csv): 22 organizations  
+[NCCS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Data/NCCS%20Demo%20Data.csv): 35 organizations  
 
 The program will generate three results files:
 
-* [yes.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/yes.match.csv): organizations that match by name AND geography. 
-* [maybe.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/maybe.match.csv): organizations that match by name only. 
-* [no.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/no.match.csv): organizations that do not match by name. 
+* [yes.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Data/yes.match.csv): organizations that match by name AND geography. 
+* [maybe.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Data/maybe.match.csv): organizations that match by name only. 
+* [no.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Data/no.match.csv): organizations that do not match by name. 
 
 Note that all code is in the R programming language. 
 
@@ -92,7 +92,7 @@ We have created small samples of FAADS and NCCS data and saved them in this repo
 library( RCurl )
 
 # Create an object for the URL where your data is stored.
-url.faads <- "https://raw.githubusercontent.com/lecy/FAADS-NCCS-Crosswalk/master/FAADS%20Demo%20Data.csv"
+url.faads <- "https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Data/FAADS%20Demo%20Data.csv"
 
 # Use getURL from RCurl to download the file.
 faads.sample <- getURL( url.faads, ssl.verifypeer = FALSE )
@@ -101,7 +101,7 @@ faads.sample <- getURL( url.faads, ssl.verifypeer = FALSE )
 faads.sample <- read.csv(textConnection( faads.sample ), stringsAsFactors=FALSE )  
 
 # Load the NCCS Sample Data
-url.nccs <- "https://raw.githubusercontent.com/lecy/FAADS-NCCS-Crosswalk/master/NCCS%20Demo%20Data.csv"
+url.nccs <- "https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Data/NCCS%20Demo%20Data.csv"
 nccs.sample <- getURL( url.nccs, ssl.verifypeer = FALSE )
 nccs.sample <- read.csv( textConnection( nccs.sample ), stringsAsFactors=FALSE ) 
 
