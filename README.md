@@ -77,9 +77,9 @@ This section demonstrates the matching algorithm using two small datasets:
 
 The program will generate three results files:
 
-[yes.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/yes.match.csv): organizations that match by name AND geography
-[maybe.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/maybe.match.csv): organizations that match by name only
-[no.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/no.match.csv): organizations that do not match by name
+* [yes.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/yes.match.csv): organizations that match by name AND geography. 
+* [maybe.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/maybe.match.csv): organizations that match by name only. 
+* [no.match](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/no.match.csv): organizations that do not match by name. 
 
 Note that all code is in the R programming language. 
 
