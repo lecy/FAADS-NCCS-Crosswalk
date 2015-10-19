@@ -72,8 +72,8 @@ Steps for calculating the match rates and comparing characteristics of matched a
 
 This section demonstrates the matching algorithm using two small datasets:
 
-[FAADS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/FAADS%20Demo%20Data.csv): 22 organizations 
-[NCCS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/NCCS%20Demo%20Data.csv): 35 organizations 
+[FAADS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/FAADS%20Demo%20Data.csv): 22 organizations  
+[NCCS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/NCCS%20Demo%20Data.csv): 35 organizations  
 
 The program will generate three results files:
 
