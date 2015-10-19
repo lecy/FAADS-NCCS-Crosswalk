@@ -46,23 +46,23 @@ See an example of the Levenshtein edit distance metric here: http://www.let.rug.
 
 If you would like to apply the matching algorithm to your own data (links to FAADS and NCCS data downloads are above), you would need to download and deploy the following R scripts:
 
-## Step 01 - [Cleaning FAADS Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Step%2001%20-%20Load%20and%20Clean%20FAADS%20Data.R)
+**Step 01 - [Cleaning FAADS Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Step%2001%20-%20Load%20and%20Clean%20FAADS%20Data.R)**
 
 Pre-processing steps necessary to compare organizational names and geographies such as converting all text to lower case, removing special characters, and standardizing abbreviations (Incorporated -> Inc, Avenue -> Ave, etc.).
 
-## Step 02 - [Cleaning NCCS Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Step%2002%20-%20Load%20and%20Clean%20NCCS%20Data.R)
+**Step 02 - [Cleaning NCCS Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Step%2002%20-%20Load%20and%20Clean%20NCCS%20Data.R)**
 
 Pre-processing steps necessary to compare organizational names and geographies such as converting all text to lower case, removing special characters, and standardizing abbreviations (Incorporated -> Inc, Avenue -> Ave, etc.).
 
-## Step 03 - [Matching FAADS to NCCS](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Step%2003%20-%20Match%20FAADS%20and%20NCCS.R)
+**Step 03 - [Matching FAADS to NCCS](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Step%2003%20-%20Match%20FAADS%20and%20NCCS.R)**
 
 Apply a fuzzy matching algorithm to the name fields of the FAADS and NCCS data, then apply an exact match to three geographic fields (city, state, zip). If the case matches on name and 2+ geographic fields, it is assigned to the *yes.match* set. If it matches on names and 1 or 0 geographic fields, it is assigned to the *maybe.match* set (each FAADS case may have multiple possible matches in the NCCS dataset). And if there is no match on name, the case is assigned to the *no.match* set.
 
-## Step 04 - [Merging Datasets](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Step%2004%20-%20Combining%20Datasets.R)
+**Step 04 - [Merging Datasets](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Step%2004%20-%20Combining%20Datasets.R)**
 
 Steps to merge matched cases in FAADS and NCCS.
 
-## Step 05 - [Comparing Matched and Unmatched Cases](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Step%2005%20-%20Compare%20Matched%20and%20Unmatched%20Samples.R)
+**Step 05 - [Comparing Matched and Unmatched Cases](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Step%2005%20-%20Compare%20Matched%20and%20Unmatched%20Samples.R)**
 
 Steps for calculating the match rates and comparing characteristics of matched and unmatched samples to test for selection bias. 
 
@@ -72,8 +72,8 @@ Steps for calculating the match rates and comparing characteristics of matched a
 
 This section demonstrates the matching algorithm using two small datasets:
 
-[FAADS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/FAADS%20Demo%20Data.csv): 22 organizations
-[NCCS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/NCCS%20Demo%20Data.csv): 35 organizations
+[FAADS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/FAADS%20Demo%20Data.csv): 22 organizations 
+[NCCS Demo Data](https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/NCCS%20Demo%20Data.csv): 35 organizations 
 
 The program will generate three results files:
 
