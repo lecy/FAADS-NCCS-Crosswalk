@@ -92,7 +92,7 @@ We have created small samples of FAADS and NCCS data and saved them in this repo
 library( RCurl )
 
 # Create an object for the URL where your data is stored.
-url.faads <- "https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Data/FAADS%20Demo%20Data.csv"
+url.faads <- "https://raw.githubusercontent.com/lecy/FAADS-NCCS-Crosswalk/master/Data/FAADS%20Demo%20Data.csv"
 
 # Use getURL from RCurl to download the file.
 faads.sample <- getURL( url.faads, ssl.verifypeer = FALSE )
@@ -101,7 +101,7 @@ faads.sample <- getURL( url.faads, ssl.verifypeer = FALSE )
 faads.sample <- read.csv(textConnection( faads.sample ), stringsAsFactors=FALSE )  
 
 # Load the NCCS Sample Data
-url.nccs <- "https://github.com/lecy/FAADS-NCCS-Crosswalk/blob/master/Data/NCCS%20Demo%20Data.csv"
+url.nccs <- "https://raw.githubusercontent.com/lecy/FAADS-NCCS-Crosswalk/master/Data/NCCS%20Demo%20Data.csv"
 nccs.sample <- getURL( url.nccs, ssl.verifypeer = FALSE )
 nccs.sample <- read.csv( textConnection( nccs.sample ), stringsAsFactors=FALSE ) 
 
