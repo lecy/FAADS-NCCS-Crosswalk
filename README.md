@@ -151,9 +151,6 @@ for( i in 1:length(faads.names) )
 
 }
 
-how.many.matches <- lapply( results, length )
-
-sum( how.many.matches > 100 )
 
 
 
