@@ -177,14 +177,6 @@ loop.count <- 0
 for( i in 1:length(faads.names) )
 {
 
-
-
-  loop.count <- loop.count + 1
-  
-  print( loop.count )
-  
-  
-  
   # Extract the vector of potential matches from the results list
   
   these <- results[[i]]
