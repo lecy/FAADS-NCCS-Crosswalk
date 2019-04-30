@@ -6,7 +6,7 @@ The FAADS uses the DUNS Number as the organizational ID field, and NCCS uses the
 
 We present a method of fuzzy matching in order to create a bridge between the two data sources using the name and location of nonprofits. The methodology is described here:
 
-*Lecy, Jesse D. and Thornton, Jeremy P., What Big Data Can Tell Us About Government Awards to the Nonprofit Sector: Using the FAADS (November 25, 2013).* [Available at SSRN](http://ssrn.com/abstract=2359490 or http://dx.doi.org/10.2139/ssrn.2359490)
+*Lecy, Jesse D. and Thornton, Jeremy P., What Big Data Can Tell Us About Government Awards to the Nonprofit Sector: Using the FAADS (November 25, 2013).* [**PDF DOWNLOAD**](https://github.com/lecy/FAADS-NCCS-Crosswalk/raw/master/FAADS-2015-Lecy%20%26%20Thornton.pdf)
 
 The FAADS data can be optained through the usaspending.gov website:
 
